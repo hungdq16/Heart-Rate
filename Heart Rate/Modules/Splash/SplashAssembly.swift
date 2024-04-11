@@ -10,7 +10,8 @@ class SplashAssembly: Assembly {
         }
 
         container.register(ViewToPresenterSplashProtocol.self) { (r, view: SplashVC) in
-            let presenter = SplashPresenter(view: view)
+            let purchaseService = Container.shared.resolve(PurchaseService.self)!
+            let presenter = SplashPresenter(view: view, purchaseService: purchaseService)
             presenter.setRouter(router: r.resolve(PresenterToRouterSplashProtocol.self)!)
             return presenter
         }

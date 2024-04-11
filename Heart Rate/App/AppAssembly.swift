@@ -16,7 +16,8 @@ fileprivate let container: Container = {
         InAppPurchaseAssembly(),
         OnboardingAssembly(),
         SettingsAssembly(),
-        HomeAssembly()
+        HomeAssembly(),
+        TabbarAssembly()
     ])
     return container
 }()

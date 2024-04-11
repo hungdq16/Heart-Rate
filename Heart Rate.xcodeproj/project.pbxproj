@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F11462032BC7F69C00E861DE /* AdsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11462022BC7F69C00E861DE /* AdsKey.swift */; };
+		F11462052BC7F6DB00E861DE /* FirebaseRemoteConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11462042BC7F6DB00E861DE /* FirebaseRemoteConfigService.swift */; };
+		F11462182BC7FA6A00E861DE /* TabbarContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11462132BC7FA6A00E861DE /* TabbarContract.swift */; };
+		F11462192BC7FA6A00E861DE /* TabbarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11462142BC7FA6A00E861DE /* TabbarPresenter.swift */; };
+		F114621A2BC7FA6A00E861DE /* TabbarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11462152BC7FA6A00E861DE /* TabbarRouter.swift */; };
+		F114621B2BC7FA6A00E861DE /* TabbarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11462162BC7FA6A00E861DE /* TabbarAssembly.swift */; };
+		F114621C2BC7FA6A00E861DE /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11462172BC7FA6A00E861DE /* TabbarVC.swift */; };
+		F114621D2BC7FA6A00E861DE /* TabbarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F11462122BC7FA6A00E861DE /* TabbarVC.xib */; };
 		F1A7AF072BC7E96700013E15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A7AF062BC7E96700013E15 /* AppDelegate.swift */; };
 		F1A7AF092BC7E96700013E15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A7AF082BC7E96700013E15 /* SceneDelegate.swift */; };
 		F1A7AF0B2BC7E96700013E15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A7AF0A2BC7E96700013E15 /* ViewController.swift */; };
@@ -101,6 +109,14 @@
 		1B70605704FEDF61230CC1D8 /* Pods_Heart_Rate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heart_Rate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9097390CFA9B97B50A221632 /* Pods-Heart Rate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heart Rate.release.xcconfig"; path = "Target Support Files/Pods-Heart Rate/Pods-Heart Rate.release.xcconfig"; sourceTree = "<group>"; };
 		B535B605811CD9E90B706A2E /* Pods-Heart Rate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heart Rate.debug.xcconfig"; path = "Target Support Files/Pods-Heart Rate/Pods-Heart Rate.debug.xcconfig"; sourceTree = "<group>"; };
+		F11462022BC7F69C00E861DE /* AdsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsKey.swift; sourceTree = "<group>"; };
+		F11462042BC7F6DB00E861DE /* FirebaseRemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRemoteConfigService.swift; sourceTree = "<group>"; };
+		F11462122BC7FA6A00E861DE /* TabbarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarVC.xib; sourceTree = "<group>"; };
+		F11462132BC7FA6A00E861DE /* TabbarContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarContract.swift; sourceTree = "<group>"; };
+		F11462142BC7FA6A00E861DE /* TabbarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarPresenter.swift; sourceTree = "<group>"; };
+		F11462152BC7FA6A00E861DE /* TabbarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarRouter.swift; sourceTree = "<group>"; };
+		F11462162BC7FA6A00E861DE /* TabbarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarAssembly.swift; sourceTree = "<group>"; };
+		F11462172BC7FA6A00E861DE /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
 		F1A7AF032BC7E96700013E15 /* Heart Rate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heart Rate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A7AF062BC7E96700013E15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1A7AF082BC7E96700013E15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -471,6 +487,12 @@
 		F1A7AF8B2BC7EC6500013E15 /* MainTabbar */ = {
 			isa = PBXGroup;
 			children = (
+				F11462122BC7FA6A00E861DE /* TabbarVC.xib */,
+				F11462132BC7FA6A00E861DE /* TabbarContract.swift */,
+				F11462142BC7FA6A00E861DE /* TabbarPresenter.swift */,
+				F11462152BC7FA6A00E861DE /* TabbarRouter.swift */,
+				F11462162BC7FA6A00E861DE /* TabbarAssembly.swift */,
+				F11462172BC7FA6A00E861DE /* TabbarVC.swift */,
 			);
 			path = MainTabbar;
 			sourceTree = "<group>";
@@ -539,6 +561,7 @@
 		F1A7AFBC2BC7EC8000013E15 /* Ads */ = {
 			isa = PBXGroup;
 			children = (
+				F11462022BC7F69C00E861DE /* AdsKey.swift */,
 			);
 			path = Ads;
 			sourceTree = "<group>";
@@ -546,6 +569,7 @@
 		F1A7AFBD2BC7EC8000013E15 /* RemoteConfig */ = {
 			isa = PBXGroup;
 			children = (
+				F11462042BC7F6DB00E861DE /* FirebaseRemoteConfigService.swift */,
 			);
 			path = RemoteConfig;
 			sourceTree = "<group>";
@@ -698,6 +722,7 @@
 			files = (
 				F1A7AFAB2BC7EC6500013E15 /* InAppPurchaseVC.xib in Resources */,
 				F1A7AF102BC7E96800013E15 /* Assets.xcassets in Resources */,
+				F114621D2BC7FA6A00E861DE /* TabbarVC.xib in Resources */,
 				F1A7AF132BC7E96800013E15 /* Base in Resources */,
 				F1A7AF0E2BC7E96700013E15 /* Base in Resources */,
 				F1A7AFB12BC7EC6500013E15 /* HomeVC.xib in Resources */,
@@ -833,6 +858,11 @@
 				F1A7AF0B2BC7E96700013E15 /* ViewController.swift in Sources */,
 				F1A7AF4B2BC7EBD700013E15 /* DateUtils.swift in Sources */,
 				F1A7AF942BC7EC6500013E15 /* SettingsAssembly.swift in Sources */,
+				F11462182BC7FA6A00E861DE /* TabbarContract.swift in Sources */,
+				F11462192BC7FA6A00E861DE /* TabbarPresenter.swift in Sources */,
+				F114621A2BC7FA6A00E861DE /* TabbarRouter.swift in Sources */,
+				F114621B2BC7FA6A00E861DE /* TabbarAssembly.swift in Sources */,
+				F114621C2BC7FA6A00E861DE /* TabbarVC.swift in Sources */,
 				F1A7AF612BC7EC1C00013E15 /* UIImageViewExtensions.swift in Sources */,
 				F1A7AF4A2BC7EBD700013E15 /* Localizable.swift in Sources */,
 				F1A7AF6A2BC7EC3900013E15 /* GlobalSubject.swift in Sources */,
@@ -861,11 +891,13 @@
 				F1A7AF9C2BC7EC6500013E15 /* SplashPresenter.swift in Sources */,
 				F1A7AFA12BC7EC6500013E15 /* OnboardingContract.swift in Sources */,
 				F1A7AF452BC7EB7000013E15 /* AppAssembly.swift in Sources */,
+				F11462052BC7F6DB00E861DE /* FirebaseRemoteConfigService.swift in Sources */,
 				F1A7AFAC2BC7EC6500013E15 /* HomeAssembly.swift in Sources */,
 				F1A7AFA02BC7EC6500013E15 /* OnboardingAssembly.swift in Sources */,
 				F1A7AF952BC7EC6500013E15 /* SettingsContract.swift in Sources */,
 				F1A7AF4E2BC7EBF200013E15 /* BaseView.swift in Sources */,
 				F1A7AF5F2BC7EC1C00013E15 /* StringExtensions.swift in Sources */,
+				F11462032BC7F69C00E861DE /* AdsKey.swift in Sources */,
 				F1A7AFC22BC7EC8000013E15 /* AppService.swift in Sources */,
 				F1A7AF072BC7E96700013E15 /* AppDelegate.swift in Sources */,
 				F1A7AF602BC7EC1C00013E15 /* UIImageExtensions.swift in Sources */,
