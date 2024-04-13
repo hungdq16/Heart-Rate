@@ -3,7 +3,6 @@ import Swinject
 
 class TabbarAssembly: Assembly {
     func assemble(container: Container) {
-
         container.register(PresenterToRouterTabbarProtocol.self) { (r) in
             let router = TabbarRouter()
             return router
@@ -15,10 +14,11 @@ class TabbarAssembly: Assembly {
             return presenter
         }
 
-        container.register(TabbarVC.self) { (r) in
-            let vc = TabbarVC()
+        container.register(TabbarVC.self) { (r, isFromOnboarding: Bool) in
+            let vc = TabbarVC(isFromOnboarding: isFromOnboarding)
             vc.setPresenter(presenter: r.resolve(ViewToPresenterTabbarProtocol.self, argument: vc)!)
             return vc
         }
     }
 }
+

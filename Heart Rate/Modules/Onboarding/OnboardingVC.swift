@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Analytics
 
 class OnboardingVC: UIViewController, PresenterToViewOnboardingProtocol {
     // MARK: - Properties
@@ -17,19 +18,18 @@ class OnboardingVC: UIViewController, PresenterToViewOnboardingProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupView()
+        BralyTracking.shared.logScreenView(screenName: "ftu_ob1_show")
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func onClickedGoBtn(_ sender: Any) {
+        let tabbarNavi = TabbarRouter.createModule(isFromOnboarding: true)
+        UIApplication.shared.windows.first?.rootViewController = tabbarNavi
     }
-    */
+}
 
+extension OnboardingVC {
+    private func setupView() {
+        
+    }
+    
 }
