@@ -85,6 +85,7 @@
 		F1A7AFCA2BC7EE2800013E15 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1A7AFC92BC7EE2800013E15 /* GoogleService-Info.plist */; };
 		F1A7AFCD2BC7EE8400013E15 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F1A7AFCC2BC7EE8400013E15 /* FirebaseAnalytics */; };
 		F1A7AFCF2BC7EE8400013E15 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = F1A7AFCE2BC7EE8400013E15 /* FirebaseAppCheck */; };
+		F1D82C302BCD2BBA009B2B3E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D82C2F2BCD2BBA009B2B3E /* R.generated.swift */; };
 		FAC1C142F36ECE6C4C5B3FEA /* Pods_Heart_Rate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B70605704FEDF61230CC1D8 /* Pods_Heart_Rate.framework */; };
 /* End PBXBuildFile section */
 
@@ -189,6 +190,7 @@
 		F1A7AFBB2BC7EC8000013E15 /* AppService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
 		F1A7AFC42BC7ECA700013E15 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F1A7AFC92BC7EE2800013E15 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1D82C2F2BCD2BBA009B2B3E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -418,6 +420,7 @@
 		F1A7AF412BC7EB1E00013E15 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F1D82C2F2BCD2BBA009B2B3E /* R.generated.swift */,
 				F1A7AFC32BC7ECA700013E15 /* Fonts */,
 				F1A7AFC52BC7ECA700013E15 /* Localizable */,
 			);
@@ -612,12 +615,12 @@
 			buildConfigurationList = F1A7AF2D2BC7E96800013E15 /* Build configuration list for PBXNativeTarget "Heart Rate" */;
 			buildPhases = (
 				E83DD22C66D0BAB558BD396A /* [CP] Check Pods Manifest.lock */,
+				F1A7AFD02BC7EF5F00013E15 /* R.swift */,
 				F1A7AEFF2BC7E96700013E15 /* Sources */,
 				F1A7AF002BC7E96700013E15 /* Frameworks */,
 				F1A7AF012BC7E96700013E15 /* Resources */,
 				D960FAF35E5CF579FC46FE1F /* [CP] Embed Pods Frameworks */,
 				BF86342EF95A2ADF33D7F30D /* [CP] Copy Pods Resources */,
-				F1A7AFD02BC7EF5F00013E15 /* R.swift */,
 				F1A7AFD12BC7EF8700013E15 /* Google Service */,
 			);
 			buildRules = (
@@ -887,6 +890,7 @@
 				F1A7AF972BC7EC6500013E15 /* SettingsRouter.swift in Sources */,
 				F1A7AF512BC7EC0600013E15 /* IAPPositionEnum.swift in Sources */,
 				F1A7AFAD2BC7EC6500013E15 /* HomeContract.swift in Sources */,
+				F1D82C302BCD2BBA009B2B3E /* R.generated.swift in Sources */,
 				F1A7AFBF2BC7EC8000013E15 /* UserDefaultsService.swift in Sources */,
 				F1A7AF9C2BC7EC6500013E15 /* SplashPresenter.swift in Sources */,
 				F1A7AFA12BC7EC6500013E15 /* OnboardingContract.swift in Sources */,
@@ -1022,7 +1026,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1079,7 +1083,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1271,7 +1275,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
-				kind = upToNextMajorVersion;
+				kind = upToNextMinorVersion;
 				minimumVersion = 10.24.0;
 			};
 		};

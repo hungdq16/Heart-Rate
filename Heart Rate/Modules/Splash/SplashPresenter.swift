@@ -94,7 +94,7 @@ class SplashPresenter: ViewToPresenterSplashProtocol {
 //        BralyAdvertisement.shared.loadInterstitial(configKey: AdsKey.fullChangeTab.rawValue) {
 //            Logger.d(messages: "load ad interstitial done")
 //        }
-//        
+//
 //        BralyAdvertisement.shared.loadInterstitial(configKey: AdsKey.fullPlayer.rawValue) {
 //            Logger.d(messages: "load ad interstitial done")
 //        }

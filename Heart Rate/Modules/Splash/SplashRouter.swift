@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 import Swinject
 
 final class SplashRouter: PresenterToRouterSplashProtocol {
